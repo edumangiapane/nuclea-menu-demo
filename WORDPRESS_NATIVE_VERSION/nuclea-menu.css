@@ -1,0 +1,497 @@
+/**
+ * NUCLEA MEGA MENU - ESTILOS
+ * Versão WordPress/Elementor
+ * 
+ * Este arquivo contém todos os estilos necessários para o menu
+ * Incluir no tema via functions.php ou adicionar ao Custom CSS do Elementor
+ */
+
+/* ============================================
+   VARIÁVEIS CSS
+   ============================================ */
+:root {
+  --nuclea-primary: #BA82FF;
+  --nuclea-primary-dark: #8311DA;
+  --nuclea-accent: #66FFCC;
+  --nuclea-hover-bg: #EFD3FF;
+  --nuclea-border: #E3E3E3;
+  --nuclea-text: #000000;
+  --nuclea-text-secondary: #666666;
+  --nuclea-bg-white: #FFFFFF;
+  --nuclea-bg-black: #000000;
+  
+  /* Fontes */
+  --nuclea-font-primary: 'ABC Favorit Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --nuclea-font-mono: 'ABC Favorit Mono', 'Courier New', monospace;
+  
+  /* Espaçamentos */
+  --nuclea-spacing-xs: 4px;
+  --nuclea-spacing-sm: 8px;
+  --nuclea-spacing-md: 16px;
+  --nuclea-spacing-lg: 24px;
+  --nuclea-spacing-xl: 32px;
+}
+
+/* ============================================
+   RESET E BASE
+   ============================================ */
+.nuclea-mega-menu-wrapper {
+  position: relative;
+  font-family: var(--nuclea-font-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nuclea-mega-menu-wrapper * {
+  box-sizing: border-box;
+}
+
+/* ============================================
+   FAIXA SUPERIOR (Top Bar)
+   ============================================ */
+.nuclea-top-bar {
+  width: 100%;
+  background-color: var(--nuclea-bg-black);
+  height: 38px;
+}
+
+.nuclea-top-bar .lang-button {
+  color: rgba(255, 255, 255, 0.6);
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: var(--nuclea-font-primary);
+  font-size: 11px;
+  gap: 6px;
+  transition: color 0.2s ease;
+  padding: 4px 8px;
+}
+
+.nuclea-top-bar .lang-button:hover {
+  color: var(--nuclea-accent);
+}
+
+.nuclea-top-bar .lang-button:focus {
+  outline: 2px solid var(--nuclea-accent);
+  outline-offset: 2px;
+}
+
+/* ============================================
+   HEADER PRINCIPAL
+   ============================================ */
+.nuclea-header {
+  position: relative;
+  background-color: var(--nuclea-bg-white);
+  border-bottom: 1px solid var(--nuclea-border);
+  z-index: 50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.nuclea-header img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============================================
+   BOTÕES DO MENU PRINCIPAL
+   ============================================ */
+.menu-item-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--nuclea-text);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--nuclea-font-primary);
+  transition: color 0.2s ease;
+  padding: 8px 4px;
+}
+
+.menu-item-button:hover,
+.menu-item-button.active {
+  color: var(--nuclea-primary);
+}
+
+.menu-item-button:focus {
+  outline: 2px solid var(--nuclea-primary);
+  outline-offset: 2px;
+}
+
+.menu-item-button .menu-icon {
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.menu-item-button.active .menu-icon {
+  transform: rotate(180deg);
+}
+
+/* ============================================
+   BUSCA E CTA
+   ============================================ */
+.nuclea-search-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--nuclea-text);
+  transition: color 0.2s ease;
+  padding: 8px;
+}
+
+.nuclea-search-button:hover {
+  color: var(--nuclea-primary);
+}
+
+.nuclea-cta-button {
+  background-color: var(--nuclea-accent);
+  color: var(--nuclea-text);
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--nuclea-font-primary);
+  height: 36px;
+  padding: 0 20px;
+  white-space: nowrap;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nuclea-cta-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.nuclea-cta-button:active {
+  transform: translateY(0);
+}
+
+/* ============================================
+   MEGA MENU DROPDOWN
+   ============================================ */
+#nuclea-mega-menu-dropdown {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  top: 130px;
+  display: none;
+  pointer-events: all;
+}
+
+#nuclea-mega-menu-dropdown.show {
+  display: block;
+}
+
+/* Backdrop blur */
+.backdrop-blur {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 504px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.blur-left {
+  position: absolute;
+  left: 0;
+  height: 504px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 39;
+  background-color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+}
+
+/* Container das colunas */
+.menu-columns-container {
+  max-width: 1128px;
+  margin: 0 auto;
+  display: flex;
+  gap: 0;
+  height: 504px;
+  font-family: var(--nuclea-font-primary);
+  position: relative;
+  z-index: 40;
+}
+
+/* ============================================
+   COLUNAS DO MEGA MENU
+   ============================================ */
+.nuclea-menu-column {
+  width: 282px;
+  flex-shrink: 0;
+  position: relative;
+  background-color: var(--nuclea-bg-white);
+  border-left: 1px solid var(--nuclea-border);
+  border-right: 1px solid var(--nuclea-border);
+  border-bottom: 1px solid var(--nuclea-border);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 0px 4px 0px rgba(0, 0, 0, 0.16);
+}
+
+/* Header da coluna */
+.nuclea-menu-column > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 25px 25px 32px;
+  height: 125px;
+  min-height: 125px;
+}
+
+.nuclea-menu-column h3 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  font-family: var(--nuclea-font-primary);
+  margin: 0;
+  white-space: normal; /* Fallback para navegadores antigos */
+  text-wrap: balance; /* Browsers modernos (Chrome 114+, Safari 17.4+) */
+}
+
+/* Lista de itens */
+.nuclea-menu-column ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-grow: 1;
+}
+
+/* ============================================
+   ITENS DO MENU
+   ============================================ */
+.nuclea-menu-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  min-height: 44px;
+  padding: 0 25px;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+  position: relative;
+}
+
+.nuclea-menu-item:hover:not(.active) {
+  background-color: #f9fafb;
+}
+
+.nuclea-menu-item.active {
+  background-color: var(--nuclea-hover-bg);
+}
+
+.nuclea-menu-item .item-text {
+  line-height: 1.2;
+  white-space: normal; /* Fallback para navegadores antigos */
+  text-wrap: balance; /* Browsers modernos (Chrome 114+, Safari 17.4+) */
+  flex: 1;
+  color: var(--nuclea-text);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nuclea-menu-item:hover .item-text,
+.nuclea-menu-item.active .item-text {
+  color: var(--nuclea-primary-dark);
+}
+
+.nuclea-menu-item .item-icon {
+  opacity: 0;
+  color: var(--nuclea-text);
+  transition: opacity 0.2s ease, color 0.2s ease;
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.nuclea-menu-item:hover .item-icon,
+.nuclea-menu-item.active .item-icon {
+  opacity: 1;
+  color: var(--nuclea-primary-dark);
+}
+
+/* ============================================
+   FOOTER DAS COLUNAS
+   ============================================ */
+.nuclea-column-footer {
+  margin-top: auto;
+  border-top: 1px solid var(--nuclea-border);
+  padding: var(--nuclea-spacing-lg) 25px;
+}
+
+.nuclea-column-footer h4 {
+  font-family: var(--nuclea-font-mono);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--nuclea-text);
+  margin: 0 0 4px 0;
+  text-transform: uppercase;
+}
+
+.nuclea-column-footer p {
+  font-family: var(--nuclea-font-primary);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--nuclea-text-secondary);
+  line-height: 1.4;
+  margin: 0 0 12px 0;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--nuclea-font-primary);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--nuclea-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: var(--nuclea-primary-dark);
+}
+
+/* ============================================
+   RESPONSIVIDADE
+   ============================================ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .menu-columns-container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  
+  .nuclea-menu-column {
+    width: 250px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  /* Ocultar menu desktop no mobile */
+  .nuclea-mega-menu-wrapper {
+    display: none;
+  }
+  
+  /* OU implementar menu hambúrguer */
+  .nuclea-header nav {
+    display: none;
+  }
+  
+  .nuclea-mobile-toggle {
+    display: block;
+  }
+}
+
+/* ============================================
+   ANIMAÇÕES
+   ============================================ */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#nuclea-mega-menu-dropdown.show {
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* ============================================
+   ACESSIBILIDADE
+   ============================================ */
+
+/* Foco para teclado */
+.nuclea-menu-item:focus-within {
+  outline: 2px solid var(--nuclea-primary);
+  outline-offset: -2px;
+}
+
+/* Modo de alto contraste */
+@media (prefers-contrast: high) {
+  :root {
+    --nuclea-border: #000000;
+    --nuclea-text-secondary: #000000;
+  }
+}
+
+/* Preferência de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ============================================
+   UTILITÁRIOS
+   ============================================ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ============================================
+   IMPRESSÃO
+   ============================================ */
+@media print {
+  #nuclea-mega-menu-dropdown {
+    display: none !important;
+  }
+}
+
+/* ============================================
+   COMPATIBILIDADE COM ELEMENTOR
+   ============================================ */
+
+/* Resetar estilos do Elementor que podem conflitar */
+.elementor-widget-html .nuclea-mega-menu-wrapper * {
+  all: revert;
+}
+
+.elementor-widget-html .nuclea-mega-menu-wrapper {
+  all: revert;
+}
+
+/* Garantir que os estilos do menu prevaleçam */
+.nuclea-mega-menu-wrapper button,
+.nuclea-mega-menu-wrapper a {
+  font-family: var(--nuclea-font-primary) !important;
+}
+
+/* ============================================
+   FIM DOS ESTILOS
+   ============================================ */
