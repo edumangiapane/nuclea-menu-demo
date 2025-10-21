@@ -1,23 +1,55 @@
+# 🎯 Nuclea Mega Menu
 
-# Nuclea Mega Menu
+[![Live Demo](https://img.shields.io/badge/demo-online-success)](https://edumangiapane.github.io/nuclea-menu-demo/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![WordPress](https://img.shields.io/badge/WordPress-Compatible-21759B.svg)](https://wordpress.org/)
+[![Elementor](https://img.shields.io/badge/Elementor-Ready-92003B.svg)](https://elementor.com/)
 
-Este projeto contém o **Mega Menu hierárquico da Nuclea** em duas versões:
-
-1. **Versão React/TypeScript** (original) - Código fonte atual
-2. **Versão WordPress/Elementor** (convertido) - Pacote de integração pronto
+> Menu mega hierárquico profissional - React convertido para WordPress/Elementor
 
 ---
 
-## 🚀 Versão React (Original)
+## 🚀 Demo Online
 
-### Rodar o projeto React:
+👉 **[Ver Demo Interativa](https://edumangiapane.github.io/nuclea-menu-demo/)** ← Clique aqui!
 
+---
+
+## 📦 Pacotes Disponíveis
+
+Este repositório contém **3 implementações diferentes**:
+
+### 1️⃣ **Demo Online (GitHub Pages)**
+📁 Pasta: [`/docs`](./docs/)
+- ✅ HTML standalone completo
+- ✅ CSS e JS inline
+- ✅ Zero dependências
+- 🔗 [Acessar demo](https://edumangiapane.github.io/nuclea-menu-demo/)
+
+### 2️⃣ **Pacote WordPress/Elementor (Recomendado)**
+📁 Pasta: [`/ELEMENTOR_TEMPLATE_PACKAGE`](./ELEMENTOR_TEMPLATE_PACKAGE/)
+- ✅ Template JSON para importar no Elementor
+- ✅ JavaScript vanilla pronto
+- ✅ Documentação completa em português
+- ✅ Guias visuais passo a passo
+- ⚡ Implementação em **15-20 minutos**
+
+📖 [Guia completo →](./ELEMENTOR_TEMPLATE_PACKAGE/LEIA_PRIMEIRO.md)
+
+### 3️⃣ **Projeto React Original**
+📁 Pasta: [`/src`](./src/)
+- ✅ Código fonte React + TypeScript
+- ✅ Vite + Tailwind CSS
+- ✅ Componentes Radix UI
+
+**Rodar localmente:**
 ```bash
-npm i              # Instalar dependências
+npm install        # Instalar dependências
 npm run dev        # Iniciar servidor de desenvolvimento
+# Acesse: http://localhost:3000
 ```
 
-O projeto original está disponível no Figma: [Link do Figma](https://www.figma.com/design/K8gnXVuiaihAgZDxodvZYc/Recreate-Menu-Layout---REACT--c%C3%B3pia-)
+🎨 **Projeto Figma:** [Ver design original](https://www.figma.com/design/K8gnXVuiaihAgZDxodvZYc/Recreate-Menu-Layout---REACT--c%C3%B3pia-)
 
 ### Tecnologias:
 - React 18.3.1 + TypeScript
