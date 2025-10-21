@@ -1,0 +1,135 @@
+{
+  "Soluções": {
+    "Financeiro": {
+      "Inteligência de Dados": {
+        "Gestão de Crédito e Cobrança": [
+          "Scores e Indicadores",
+          "Relatório de Histórico de Recebíveis de Cartões"
+        ],
+        "Monitoramento de Subcredenciadoras": [
+          "Relatório de Subcredenciadoras"
+        ],
+        "Antifraude": [
+          "Indicadores de Fraude",
+          "Motor de Decisão",
+          "Plataforma de Recuperação de Valores"
+        ],
+        "Inteligência de Mercado": [
+          "Relatório Panorama e Performance"
+        ]
+      },
+      "Registro": {
+        "Recebíveis": [
+          "Recebíveis de Cartões",
+          "Duplicatas"
+        ],
+        "Crédito": [
+          "Cessão de Crédito"
+        ],
+        "Balcão": [
+          "Renda Fixa",
+          "Derivativos"
+        ]
+      },
+      "Depositária": [
+        "Depósito Centralizado"
+      ],
+      "Liquidação": {
+        "Boletos": [
+          "Plataforma Centralizada de Recebíveis (PCR)",
+          "Consulta de Status de Boletos"
+        ],
+        "Cartões": [
+          "Liquidação de Cartões (SLC)",
+          "Liquidação de Antecipação de Recebíveis (PIX)"
+        ],
+        "Outras Operações": [
+          "Liquidação de Operações de Crédito (SILOC)",
+          "Liquidação de TED (SITRAF)",
+          "Pix Automático"
+        ]
+      },
+      "Portabilidade": [
+        "Portabilidade de Crédito",
+        "Portabilidade de Salário"
+      ],
+      "Outras Infraestruturas": [
+        "Monitoramento do Correspondente Bancário",
+        "Serviço de Registro de Crédito Consignado",
+        "Plataforma do Cadastro Positivo",
+        "Sistema de Transferência de Dados - FUNDEB",
+        "Cheque Legal"
+      ]
+    },
+    "Seguros": {
+      "Registro": [
+        "Operações de Seguros - SRO"
+      ],
+      "Inteligência de Dados": [
+        "Indicadores de Seguros"
+      ],
+      "Conectividade": [
+        "SUTHUB - Plataforma de Distribuição Digital de Seguros"
+      ]
+    },
+    "Imobiliário": {
+      "Certificações": [
+        "Certificação de Renda Familiar HIS & HMP"
+      ],
+      "Inteligência de Dados": [
+        "Monitoramento de Recebíveis",
+        "Núclea by Liquid"
+      ]
+    },
+    "Tokenização": [
+      "Núclea Chain",
+      "BaaS",
+      "Plataforma de Negociação de Cotas (N-COTAS)"
+    ],
+    "Novidades": []
+  },
+  "Documentos": {
+    "Documentos de Soluções": [
+      "Regulatório, Normas e Auditorias",
+      "Matriz de Sistemas",
+      "Estatísticas Diárias"
+    ]
+  },
+  "Área do Cliente": {
+    "Suporte ao Cliente": [
+      "Form para Suporte",
+      "FAQ"
+    ],
+    "Portal do Cliente": [
+      "Núclea Conecta"
+    ]
+  },
+  "Núclea": {
+    "Institucional": [
+      "Sobre Nós",
+      "Núclea Associação",
+      "Governança Corporativa",
+      "Imprensa",
+      "Parcerias",
+      "Fornecedores"
+    ],
+    "Cultura e Pessoas": {
+      "Carreiras": [
+        "Programas de Entrada"
+      ],
+      "ESG": [],
+      "Ética e Conduta": []
+    },
+    "Segurança e Conformidade": [
+      "Relatório de Vulnerabilidades",
+      "CSIRT",
+      "Segurança e LGPD"
+    ]
+  },
+  "Conteúdos": [
+    "Blog",
+    "Núclea Academy",
+    "Podcast",
+    "Newsletter"
+  ]
+}

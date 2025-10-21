@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuclea Mega Menu - Demo Standalone</title>
+    
+    <!-- Carrega o CSS -->
+    <link rel="stylesheet" href="nuclea-menu.css">
+    
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: #f5f5f5;
+        }
+        
+        /* Container demo */
+        .demo-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .demo-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .demo-header h1 {
+            color: #8311DA;
+            margin-bottom: 10px;
+        }
+        
+        .demo-header p {
+            color: #666;
+        }
+        
+        .demo-info {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        
+        .demo-info h2 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .demo-info ul {
+            list-style-position: inside;
+            color: #666;
+        }
+        
+        .demo-info li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="demo-header">
+        <h1>🎯 Nuclea Mega Menu - Demo</h1>
+        <p>Esta é uma demonstração standalone do menu convertido para WordPress</p>
+        <p><small>Teste clicando nos itens do menu abaixo</small></p>
+    </div>
+    
+    <!-- MENU NUCLEA (Standalone) -->
+    <div id="nuclea-mega-menu" class="nuclea-mega-menu-wrapper">
+        
+        <!-- Faixa preta superior -->
+        <div class="nuclea-top-bar" style="width: 100%; background-color: #000; height: 38px;">
+            <div style="max-width: 1128px; margin: 0 auto; display: flex; align-items: center; justify-content: flex-end; height: 100%;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <button class="lang-button">
+                        <span>EN</span>
+                        <div style="width: 18px; height: 12px;">
+                            <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="25" height="17" fill="#B22234"/>
+                            </svg>
+                        </div>
+                    </button>
+                    <span style="color: rgba(255,255,255,0.3);">|</span>
+                    <button class="lang-button">
+                        <span>ES</span>
+                        <div style="width: 18px; height: 12px;">
+                            <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="25" height="17" fill="#AA151B"/>
+                                <rect y="4.25" width="25" height="8.5" fill="#F1BF00"/>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Header principal -->
+        <header class="nuclea-header" style="position: relative; background-color: #fff; border-bottom: 1px solid #E3E3E3; z-index: 50;">
+            <div style="max-width: 1128px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 24px 0; height: 92px;">
+                
+                <!-- Logo placeholder -->
+                <div style="width: 154px; height: 44px; background: linear-gradient(135deg, #8311DA, #BA82FF); border-radius: 5px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                    NUCLEA
+                </div>
+
+                <!-- Menu principal -->
+                <nav style="flex: 1; display: flex; justify-content: center;">
+                    <ul style="display: flex; align-items: center; gap: 28px; margin: 0; padding: 0; list-style: none;">
+                        <li>
+                            <button data-menu-item="Soluções" class="menu-item-button">
+                                Soluções
+                                <span class="menu-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </button>
+                        </li>
+                        <li>
+                            <button data-menu-item="Documentos" class="menu-item-button">
+                                Documentos
+                                <span class="menu-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </button>
+                        </li>
+                        <li>
+                            <button data-menu-item="Área do Cliente" class="menu-item-button">
+                                Área do Cliente
+                                <span class="menu-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </button>
+                        </li>
+                        <li>
+                            <button data-menu-item="Núclea" class="menu-item-button">
+                                Núclea
+                                <span class="menu-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </button>
+                        </li>
+                        <li>
+                            <button data-menu-item="Conteúdos" class="menu-item-button">
+                                Conteúdos
+                                <span class="menu-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Busca e CTA -->
+                <div style="display: flex; align-items: center; gap: 16px;">
+                    <button class="nuclea-search-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    </button>
+                    <button class="nuclea-cta-button">
+                        Fale com um Especialista
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Container do Mega Menu -->
+        <div id="nuclea-mega-menu-dropdown" style="position: absolute; left: 0; right: 0; z-index: 20; top: 130px; display: none;"></div>
+    </div>
+    
+    <div class="demo-container">
+        <div class="demo-info">
+            <h2>📋 Como testar:</h2>
+            <ul>
+                <li>Clique em qualquer item do menu (Soluções, Documentos, etc.)</li>
+                <li>Navegue pelos subitens nas colunas</li>
+                <li>Clique fora do menu para fechá-lo</li>
+                <li>Observe as animações e hover states</li>
+            </ul>
+        </div>
+        
+        <div class="demo-info" style="margin-top: 20px;">
+            <h2>🔧 Para integrar no WordPress:</h2>
+            <ul>
+                <li>Copie os arquivos para /wp-content/themes/seu-tema/assets/</li>
+                <li>Adicione o código PHP ao functions.php</li>
+                <li>Use o shortcode [nuclea_mega_menu] no Elementor</li>
+                <li>Consulte INSTRUCTIONS.md para detalhes</li>
+            </ul>
+        </div>
+        
+        <div class="demo-info" style="margin-top: 20px; background: #e8f5e9;">
+            <h2>✅ Status da Conversão:</h2>
+            <ul>
+                <li>✅ React → JavaScript Vanilla</li>
+                <li>✅ Tailwind → CSS Puro</li>
+                <li>✅ Dados estruturados em JSON</li>
+                <li>✅ Integração WordPress pronta</li>
+                <li>✅ Documentação completa</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Carrega dados do menu inline -->
+    <script>
+        // Dados do menu (inline para demo)
+        window.nucleaMenuData = {
+            "Soluções": {
+                "Financeiro": {
+                    "Inteligência de Dados": {
+                        "Gestão de Crédito e Cobrança": [
+                            "Scores e Indicadores",
+                            "Relatório de Histórico de Recebíveis de Cartões"
+                        ],
+                        "Antifraude": [
+                            "Indicadores de Fraude",
+                            "Motor de Decisão"
+                        ]
+                    },
+                    "Registro": {
+                        "Recebíveis": [
+                            "Recebíveis de Cartões",
+                            "Duplicatas"
+                        ]
+                    }
+                },
+                "Seguros": {
+                    "Registro": [
+                        "Operações de Seguros - SRO"
+                    ]
+                }
+            },
+            "Documentos": {
+                "Documentos de Soluções": [
+                    "Regulatório, Normas e Auditorias",
+                    "Matriz de Sistemas"
+                ]
+            },
+            "Área do Cliente": {
+                "Suporte ao Cliente": [
+                    "Form para Suporte",
+                    "FAQ"
+                ]
+            },
+            "Núclea": {
+                "Institucional": [
+                    "Sobre Nós",
+                    "Governança Corporativa"
+                ]
+            },
+            "Conteúdos": [
+                "Blog",
+                "Núclea Academy",
+                "Podcast"
+            ]
+        };
+    </script>
+    
+    <!-- Carrega o JavaScript do menu -->
+    <script src="nuclea-menu-vanilla.js"></script>
+    
+</body>
+</html>

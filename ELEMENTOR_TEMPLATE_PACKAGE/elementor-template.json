@@ -1,0 +1,74 @@
+{
+  "version": "0.4",
+  "title": "Nuclea Mega Menu",
+  "type": "page",
+  "content": [
+    {
+      "id": "nuclea-menu-section",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "gap": "no",
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0"
+        },
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0"
+        }
+      },
+      "elements": [
+        {
+          "id": "nuclea-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0"
+            }
+          },
+          "elements": [
+            {
+              "id": "nuclea-html-widget",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "title": "Nuclea Mega Menu",
+                "html": "<div id=\"nuclea-mega-menu\" class=\"nuclea-mega-menu-wrapper\">\n  \n  <!-- Faixa preta superior -->\n  <div class=\"nuclea-top-bar\" style=\"width: 100%; background-color: #000; height: 38px;\">\n    <div style=\"max-width: 1128px; margin: 0 auto; display: flex; align-items: center; justify-content: flex-end; height: 100%;\">\n      <div style=\"display: flex; align-items: center; gap: 8px;\">\n        <button class=\"lang-button\" style=\"color: rgba(255,255,255,0.6); background: none; border: none; cursor: pointer; display: flex; align-items: center; font-family: system-ui, sans-serif; font-size: 11px; gap: 6px;\">\n          <span>EN</span>\n          <div style=\"width: 18px; height: 12px;\">\n            <svg width=\"25\" height=\"17\" viewBox=\"0 0 25 17\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n              <rect width=\"25\" height=\"17\" fill=\"#B22234\"/>\n            </svg>\n          </div>\n        </button>\n        <span style=\"color: rgba(255,255,255,0.3);\">|</span>\n        <button class=\"lang-button\" style=\"color: rgba(255,255,255,0.6); background: none; border: none; cursor: pointer; display: flex; align-items: center; font-family: system-ui, sans-serif; font-size: 11px; gap: 6px;\">\n          <span>ES</span>\n          <div style=\"width: 18px; height: 12px;\">\n            <svg width=\"25\" height=\"17\" viewBox=\"0 0 25 17\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n              <rect width=\"25\" height=\"17\" fill=\"#AA151B\"/>\n              <rect y=\"4.25\" width=\"25\" height=\"8.5\" fill=\"#F1BF00\"/>\n            </svg>\n          </div>\n        </button>\n      </div>\n    </div>\n  </div>\n  \n  <!-- Header -->\n  <header class=\"nuclea-header\" style=\"position: relative; background-color: #fff; border-bottom: 1px solid #E3E3E3; z-index: 50; box-shadow: 0 2px 4px rgba(0,0,0,0.08);\">\n    <div style=\"max-width: 1128px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 24px 0; height: 92px;\">\n      \n      <!-- Logo - SUBSTITUIR PELO LOGO REAL -->\n      <div style=\"width: 154px; height: 44px;\">\n        <a href=\"/\">\n          <img src=\"/wp-content/themes/seu-tema/assets/images/logo-nuclea.png\" alt=\"Núclea\" style=\"width: 100%; height: 100%; object-fit: contain;\">\n        </a>\n      </div>\n\n      <!-- Menu principal -->\n      <nav style=\"flex: 1; display: flex; justify-content: center;\">\n        <ul style=\"display: flex; align-items: center; gap: 28px; margin: 0; padding: 0; list-style: none;\">\n          <li>\n            <button data-menu-item=\"Soluções\" class=\"menu-item-button\" style=\"display: flex; align-items: center; font-size: 14px; font-weight: 500; font-family: system-ui, sans-serif; gap: 4px; background: none; border: none; cursor: pointer; color: #000;\">\n              Soluções\n              <span class=\"menu-icon\">\n                <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"m6 9 6 6 6-6\"/></svg>\n              </span>\n            </button>\n          </li>\n          <li>\n            <button data-menu-item=\"Documentos\" class=\"menu-item-button\" style=\"display: flex; align-items: center; font-size: 14px; font-weight: 500; font-family: system-ui, sans-serif; gap: 4px; background: none; border: none; cursor: pointer; color: #000;\">\n              Documentos\n              <span class=\"menu-icon\">\n                <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"m6 9 6 6 6-6\"/></svg>\n              </span>\n            </button>\n          </li>\n          <li>\n            <button data-menu-item=\"Área do Cliente\" class=\"menu-item-button\" style=\"display: flex; align-items: center; font-size: 14px; font-weight: 500; font-family: system-ui, sans-serif; gap: 4px; background: none; border: none; cursor: pointer; color: #000;\">\n              Área do Cliente\n              <span class=\"menu-icon\">\n                <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"m6 9 6 6 6-6\"/></svg>\n              </span>\n            </button>\n          </li>\n          <li>\n            <button data-menu-item=\"Núclea\" class=\"menu-item-button\" style=\"display: flex; align-items: center; font-size: 14px; font-weight: 500; font-family: system-ui, sans-serif; gap: 4px; background: none; border: none; cursor: pointer; color: #000;\">\n              Núclea\n              <span class=\"menu-icon\">\n                <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"m6 9 6 6 6-6\"/></svg>\n              </span>\n            </button>\n          </li>\n          <li>\n            <button data-menu-item=\"Conteúdos\" class=\"menu-item-button\" style=\"display: flex; align-items: center; font-size: 14px; font-weight: 500; font-family: system-ui, sans-serif; gap: 4px; background: none; border: none; cursor: pointer; color: #000;\">\n              Conteúdos\n              <span class=\"menu-icon\">\n                <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"m6 9 6 6 6-6\"/></svg>\n              </span>\n            </button>\n          </li>\n        </ul>\n      </nav>\n\n      <!-- Busca e CTA -->\n      <div style=\"display: flex; align-items: center; gap: 16px;\">\n        <button class=\"nuclea-search-button\" style=\"display: flex; align-items: center; background: none; border: none; cursor: pointer; color: #000;\">\n          <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"m21 21-4.3-4.3\"/></svg>\n        </button>\n        <a href=\"#fale-com-especialista\" style=\"background-color: #66FFCC; color: #000; font-size: 13px; font-weight: 500; font-family: system-ui, sans-serif; height: 36px; padding: 0 20px; white-space: nowrap; border-radius: 10px; display: flex; align-items: center; text-decoration: none;\">\n          Fale com um Especialista\n        </a>\n      </div>\n    </div>\n  </header>\n\n  <!-- Container do Mega Menu -->\n  <div id=\"nuclea-mega-menu-dropdown\" style=\"position: absolute; left: 0; right: 0; z-index: 20; top: 130px; display: none;\"></div>\n</div>"
+              }
+            },
+            {
+              "id": "nuclea-css-widget",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "title": "Nuclea Menu CSS",
+                "html": "<style>\n/* NUCLEA MEGA MENU - ESTILOS */\n:root {\n  --nuclea-primary: #BA82FF;\n  --nuclea-primary-dark: #8311DA;\n  --nuclea-accent: #66FFCC;\n  --nuclea-hover-bg: #EFD3FF;\n  --nuclea-border: #E3E3E3;\n}\n\n.nuclea-mega-menu-wrapper {\n  position: relative;\n  font-family: system-ui, -apple-system, sans-serif;\n}\n\n.menu-item-button:hover,\n.menu-item-button.active {\n  color: var(--nuclea-primary) !important;\n}\n\n.lang-button:hover {\n  color: #66FFCC !important;\n}\n\n.nuclea-search-button:hover {\n  color: var(--nuclea-primary) !important;\n}\n\n.nuclea-menu-column {\n  width: 282px;\n  flex-shrink: 0;\n  background-color: #fff;\n  border: 1px solid var(--nuclea-border);\n  box-shadow: 3px 0px 4px 0px rgba(0, 0, 0, 0.16);\n}\n\n.nuclea-menu-item {\n  cursor: pointer;\n  transition: background-color 0.2s;\n}\n\n.nuclea-menu-item:hover:not(.active) {\n  background-color: #f9fafb;\n}\n\n.nuclea-menu-item.active {\n  background-color: var(--nuclea-hover-bg);\n}\n\n.nuclea-menu-item .item-text {\n  transition: color 0.2s;\n}\n\n.nuclea-menu-item:hover .item-text,\n.nuclea-menu-item.active .item-text {\n  color: var(--nuclea-primary-dark);\n}\n\n.nuclea-menu-item .item-icon {\n  transition: opacity 0.2s, color 0.2s;\n}\n\n.nuclea-menu-item:hover .item-icon,\n.nuclea-menu-item.active .item-icon {\n  opacity: 1;\n  color: var(--nuclea-primary-dark);\n}\n\n.footer-link:hover {\n  color: var(--nuclea-primary-dark) !important;\n}\n\n@keyframes fadeIn {\n  from {\n    opacity: 0;\n    transform: translateY(-10px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n\n#nuclea-mega-menu-dropdown.show {\n  animation: fadeIn 0.2s ease-out;\n}\n\n@media (max-width: 768px) {\n  .nuclea-mega-menu-wrapper {\n    display: none;\n  }\n}\n</style>"
+              }
+            },
+            {
+              "id": "nuclea-js-widget",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "title": "Nuclea Menu Data (JSON)",
+                "html": "<script>\n// Dados do menu - EDITAR CONFORME NECESSÁRIO\nwindow.nucleaMenuData = {\n  \"Soluções\": {\n    \"Financeiro\": {\n      \"Inteligência de Dados\": {\n        \"Gestão de Crédito e Cobrança\": [\n          \"Scores e Indicadores\",\n          \"Relatório de Histórico de Recebíveis de Cartões\"\n        ],\n        \"Monitoramento de Subcredenciadoras\": [\n          \"Relatório de Subcredenciadoras\"\n        ],\n        \"Antifraude\": [\n          \"Indicadores de Fraude\",\n          \"Motor de Decisão\",\n          \"Plataforma de Recuperação de Valores\"\n        ],\n        \"Inteligência de Mercado\": [\n          \"Relatório Panorama e Performance\"\n        ]\n      },\n      \"Registro\": {\n        \"Recebíveis\": [\n          \"Recebíveis de Cartões\",\n          \"Duplicatas\"\n        ],\n        \"Crédito\": [\n          \"Cessão de Crédito\"\n        ],\n        \"Balcão\": [\n          \"Renda Fixa\",\n          \"Derivativos\"\n        ]\n      },\n      \"Depositária\": [\n        \"Depósito Centralizado\"\n      ],\n      \"Liquidação\": {\n        \"Boletos\": [\n          \"Plataforma Centralizada de Recebíveis (PCR)\",\n          \"Consulta de Status de Boletos\"\n        ],\n        \"Cartões\": [\n          \"Liquidação de Cartões (SLC)\",\n          \"Liquidação de Antecipação de Recebíveis (PIX)\"\n        ],\n        \"Outras Operações\": [\n          \"Liquidação de Operações de Crédito (SILOC)\",\n          \"Liquidação de TED (SITRAF)\",\n          \"Pix Automático\"\n        ]\n      },\n      \"Portabilidade\": [\n        \"Portabilidade de Crédito\",\n        \"Portabilidade de Salário\"\n      ],\n      \"Outras Infraestruturas\": [\n        \"Monitoramento do Correspondente Bancário\",\n        \"Serviço de Registro de Crédito Consignado\",\n        \"Plataforma do Cadastro Positivo\",\n        \"Sistema de Transferência de Dados - FUNDEB\",\n        \"Cheque Legal\"\n      ]\n    },\n    \"Seguros\": {\n      \"Registro\": [\n        \"Operações de Seguros - SRO\"\n      ],\n      \"Inteligência de Dados\": [\n        \"Indicadores de Seguros\"\n      ],\n      \"Conectividade\": [\n        \"SUTHUB - Plataforma de Distribuição Digital de Seguros\"\n      ]\n    },\n    \"Imobiliário\": {\n      \"Certificações\": [\n        \"Certificação de Renda Familiar HIS & HMP\"\n      ],\n      \"Inteligência de Dados\": [\n        \"Monitoramento de Recebíveis\",\n        \"Núclea by Liquid\"\n      ]\n    },\n    \"Tokenização\": [\n      \"Núclea Chain\",\n      \"BaaS\",\n      \"Plataforma de Negociação de Cotas (N-COTAS)\"\n    ],\n    \"Novidades\": []\n  },\n  \"Documentos\": {\n    \"Documentos de Soluções\": [\n      \"Regulatório, Normas e Auditorias\",\n      \"Matriz de Sistemas\",\n      \"Estatísticas Diárias\"\n    ]\n  },\n  \"Área do Cliente\": {\n    \"Suporte ao Cliente\": [\n      \"Form para Suporte\",\n      \"FAQ\"\n    ],\n    \"Portal do Cliente\": [\n      \"Núclea Conecta\"\n    ]\n  },\n  \"Núclea\": {\n    \"Institucional\": [\n      \"Sobre Nós\",\n      \"Núclea Associação\",\n      \"Governança Corporativa\",\n      \"Imprensa\",\n      \"Parcerias\",\n      \"Fornecedores\"\n    ],\n    \"Cultura e Pessoas\": {\n      \"Carreiras\": [\n        \"Programas de Entrada\"\n      ],\n      \"ESG\": [],\n      \"Ética e Conduta\": []\n    },\n    \"Segurança e Conformidade\": [\n      \"Relatório de Vulnerabilidades\",\n      \"CSIRT\",\n      \"Segurança e LGPD\"\n    ]\n  },\n  \"Conteúdos\": [\n    \"Blog\",\n    \"Núclea Academy\",\n    \"Podcast\",\n    \"Newsletter\"\n  ]\n};\n</script>\n\n<!-- IMPORTANTE: Carregar o arquivo nuclea-menu-vanilla.js -->\n<!-- Adicione via functions.php ou WPCode -->\n<script src=\"/wp-content/themes/seu-tema/assets/nuclea-menu-vanilla.js\"></script>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
